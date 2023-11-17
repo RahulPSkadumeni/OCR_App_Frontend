@@ -17,7 +17,7 @@ function App() {
       </header>
       <div className="flex flex-col md:flex-row m-3 pb-5">
         <FileUpload aadhaarData={aadhaarData} setAadharData={setAadharData} />
-        <div className="w-full md:w-1/2  mt-3 p-6 mx-auto border shadow-lg rounded-lg  flex flex-col ">
+        <div className="w-full md:w-1/2  mt-5 p-6 mx-auto border shadow-lg rounded-lg  flex flex-col ">
           <h1 className="text-lg  font-medium">Parsed Data</h1>
           {aadhaarData ? (
             <ParsedData aadhaarData={aadhaarData} />
