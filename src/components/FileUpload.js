@@ -63,10 +63,13 @@ const FileUpload = (props) => {
       formDataToSend.append("backImage", formData.backImage);
 
       // Fetch API call
-      fetch("http://localhost:3001/api/upload", {
-        method: "POST",
-        body: formDataToSend,
-      })
+      fetch(
+        "https://ocr-app-backend-git-main-rahulpskadumeni.vercel.app/api/upload",
+        {
+          method: "POST",
+          body: formDataToSend,
+        }
+      )
         .then((response) => response.json())
         .then((data) => {
           // Handle the response from the server
